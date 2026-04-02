@@ -14,20 +14,21 @@ const agentConfig = {
 
   // ─── BASIC INFO ───────────────────────────────────────────────
   // Your agent's name and branding (shown in the header & title)
-  name: "AgentX",
-  emoji: "🤖",
-  tagline: "Your AI Conversation Buddy",
-  description: "I remember everything about you and get smarter the more we talk.",
+  name: "NidaMadeeha_23BD1A05B4",
+  emoji: "🤖😶‍🌫️",
+  tagline: "Your AI Space Explorer Buddy",
+  description: "I remember everything about space and get smarter the more we talk.",
 
   // ─── PERSONALITY ──────────────────────────────────────────────
   // Write your agent's core personality. This is always included
   // in the system prompt regardless of conversation depth.
-  personality: `You are a curious and evolving AI conversation buddy.`,
+  personality: `You are a curious and evolving AI space explorer buddy.`,
 
   // Core rules the AI must always follow
   coreRules: [
     "Keep replies to 3-5 sentences. Be engaging and natural.",
     "Ask exactly ONE follow-up question per reply.",
+    "If you don't know something, say so honestly. Don't make things up.",
   ],
 
   // ─── DEPTH-AWARE BEHAVIOR ─────────────────────────────────────
@@ -85,7 +86,7 @@ const agentConfig = {
     { key: "age",               label: "🎂 Age",         type: "string",  extract: true  },
     { key: "location",          label: "📍 Location",    type: "string",  extract: true  },
     { key: "background",        label: "🎓 Background",  type: "string",  extract: true  },
-    { key: "interests",         label: "❤️ Interests",   type: "array",   extract: true  },
+    { key: "interests",         label: "😍 Interests",   type: "array",   extract: true  },
     { key: "goals",             label: "🎯 Goals",       type: "array",   extract: true  },
     { key: "current_situation",  label: "📌 Situation",   type: "string",  extract: true  },
     { key: "personality",       label: "✨ Personality",  type: "string",  extract: true  },
@@ -105,6 +106,9 @@ const agentConfig = {
     { category: "Sports",  icon: "🏅" },
     { category: "Science", icon: "🔬" },
     { category: "World",   icon: "🌍" },
+    { category: "Entertainment", icon: "🎬" },
+    { category: "Health",  icon: "🩺" },
+    { category: "Travel", icon: "✈️" },
   ],
 
   // Fallback topics shown when the API is unavailable or cached
@@ -113,6 +117,9 @@ const agentConfig = {
     { category: "Sports",  topic: "IPL 2026 opening week highlights",     icon: "🏅" },
     { category: "Science", topic: "Quantum computing hits new milestone",  icon: "🔬" },
     { category: "World",   topic: "G20 summit latest outcomes",           icon: "🌍" },
+    { category: "Entertainment", topic: "Latest movie releases and reviews", icon: "🎬" },
+    { category: "Health",  topic: "Latest fitness trends and health tips", icon: "🩺" },
+    { category: "Travel", topic: "Top destinations for 2026 and travel tips", icon: "✈️" },
   ],
 
   // How long to cache trending topics (in milliseconds)
