@@ -109,6 +109,7 @@ const agentConfig = {
     { category: "Entertainment", icon: "🎬" },
     { category: "Health",  icon: "🩺" },
     { category: "Travel", icon: "✈️" },
+    { category: "Finance", icon: "💰" },
   ],
 
   // Fallback topics shown when the API is unavailable or cached
@@ -120,6 +121,7 @@ const agentConfig = {
     { category: "Entertainment", topic: "Latest movie releases and reviews", icon: "🎬" },
     { category: "Health",  topic: "Latest fitness trends and health tips", icon: "🩺" },
     { category: "Travel", topic: "Top destinations for 2026 and travel tips", icon: "✈️" },
+    { category: "Finance", topic: "Latest stock market updates and financial news", icon: "💰" },
   ],
 
   // How long to cache trending topics (in milliseconds)
